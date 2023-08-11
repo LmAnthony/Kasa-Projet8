@@ -1,0 +1,21 @@
+// Mettre tous mes typo en > Montserrat et $color-primary
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: $color-primary;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style-type: none;
+}
+// classe pour les liens actifs dans ma barre de navigation
+.active-link {
+    text-decoration: underline;
+}
+// 3 font-weight
+$font-weight: (
+    light: 400,
+    regular: 500,
+    bold: 700,
+);

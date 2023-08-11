@@ -1,0 +1,30 @@
+// Rounded corner
+@mixin rounded-corner-big{
+    border-radius: 25px;
+}
+
+@mixin rounded-corner-medium {
+    border-radius: 10px;
+}
+
+@mixin rounded-corner-small {
+    border-radius: 5px;
+}
+
+// Text Drop Shadow
+@mixin text-shadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// Mediaqueries pour le responsive
+@mixin smartphone-responsive {
+    @media all and (max-width: map-get($breakpoints, smartphone)) {
+        @content;
+    }
+}
+
+@mixin tablet-responsive {
+    @media all and (min-width: map-get($breakpoints, smartphone)) and (max-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}

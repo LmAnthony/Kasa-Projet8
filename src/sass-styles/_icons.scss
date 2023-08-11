@@ -1,0 +1,31 @@
+// Style de mes icons flèches de mes collapses + responsive
+.expand_icon {
+    color: white;
+    transition: transform 420ms ease-in-out;
+    @include smartphone-responsive {
+    width: 18px;         
+    }  
+    &--opened {
+    transform:rotate(-180deg);      
+    transition: transform 420ms ease-in-out;      
+    }
+}
+
+
+// Classe pour les flèches du carrousel (left&right) + responsive
+.arrow {
+        height: 80px;
+        @include smartphone-responsive {
+        height: 24px;
+        }
+        @include tablet-responsive {
+        height: 56px;
+        }
+        &--backward {
+        transform:rotate(-180deg);    
+        }
+    }
+    
+        
+
+
